@@ -1,0 +1,102 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background: black;
+  color: white;
+}
+
+.section1 {
+  height: 60vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20vw;
+}
+
+.team1 {
+  border: 1px solid rgb(136, 135, 135);
+  height: 40vh;
+  width: 25vw;
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
+    rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+
+.team1 > h1 {
+  font-size: 3rem;
+  margin: 2.5rem;
+}
+
+.buttons-team1 {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.button-submit {
+  margin-top: 1rem;
+}
+
+.btn {
+  padding: 10px;
+  background: #000;
+  color: aliceblue;
+  border-radius: 5px;
+  box-shadow: rgba(184, 198, 209, 0.3) 0px 1px 2px 0px,
+    rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+  border: none;
+}
+
+.btn:hover {
+  background: aliceblue;
+  color: black;
+}
+.section2 {
+  text-align: center;
+  border: 1px solid rgb(136, 135, 135);
+  height: 15vh;
+  width: 30vw;
+  font-size: 2rem;
+  border-radius: 5px;
+  margin: 0 auto;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
+    rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+
+#winTeamResult {
+  margin: 1rem;
+}
+
+/* Media Query For 600px */
+@media (max-width: 600px) {
+  .team1 {
+    height: 50vh;
+    width: 30vw;
+  }
+  .section2 {
+    display: block;
+  }
+
+  .buttons-team1 {
+    display: block;
+  }
+
+  .section2 {
+    width: 80vw;
+    height: 25vh;
+  }
+}
+
+@media (min-width: 601px) and (max-width: 1100px) {
+  .section2 {
+    width: 30vw;
+    height: 20vh;
+  }
+}
